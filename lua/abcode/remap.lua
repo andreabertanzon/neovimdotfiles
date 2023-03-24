@@ -19,3 +19,7 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 
 --chmod by leader
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>",{silentmode})
+
+--copilot remaps
+vim.g.copilot_no_tab_map = true
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
