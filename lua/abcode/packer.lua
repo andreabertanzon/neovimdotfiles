@@ -11,9 +11,9 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use({ 'rmehri01/onenord.nvim', as = 'onenord' })
 
-  vim.cmd('colorscheme rose-pine')
+  vim.cmd('colorscheme onenord')
 
   use( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use( 'nvim-treesitter/playground')
@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use('github/copilot.vim')
-
+  use('rmehri01/onedark.nvim')
   use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v1.x',
